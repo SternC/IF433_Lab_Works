@@ -8,7 +8,8 @@ fun main(){
 
     printReceipt(
         title = gameTitle,
-        finalPrice = finalPrice
+        finalPrice = finalPrice,
+        userNote = null
     )
 
 }
