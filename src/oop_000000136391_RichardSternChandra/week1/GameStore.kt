@@ -23,10 +23,11 @@ fun calculateDiscount(price: Int) : Int {
     return newPrice
 }
 
-fun printReceipt(title: String, finalPrice: Int){
+fun printReceipt(title: String, finalPrice: Int, userNote: String?){
     println("====================")
     println("Final Total Bill")
-    println(title)
-    println(finalPrice)
+    println("Game Title: $title")
+    println("Final Price: $finalPrice")
+    println("User Note: ${userNote ?: "Tidak ada catatan"}")
     println("====================")
 }
