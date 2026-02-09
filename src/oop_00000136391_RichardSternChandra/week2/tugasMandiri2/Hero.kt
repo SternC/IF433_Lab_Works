@@ -1,4 +1,4 @@
-package oop_00000136391_RichardSternChandra.week2
+package oop_00000136391_RichardSternChandra.week2.tugasMandiri2
 
 class Hero (val name: String, var hp: Int = 100, val baseDamage: Int){
     fun attack(targetName: String) {

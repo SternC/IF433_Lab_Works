@@ -1,4 +1,4 @@
-package oop_00000136391_RichardSternChandra.week2
+package oop_00000136391_RichardSternChandra.week2.tugasMandiri1
 
 import java.util.Scanner
 

@@ -1,4 +1,4 @@
-package oop_00000136391_RichardSternChandra.week2
+package oop_00000136391_RichardSternChandra.week2.tugasMandiri1
 
 class Loan (val bookTitle: String, val borrower: String, var loanDuration: Int = 1) {
     fun calculateFine(): Int {
