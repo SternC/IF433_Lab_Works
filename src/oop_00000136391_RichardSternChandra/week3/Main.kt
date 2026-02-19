@@ -1,5 +1,7 @@
 package oop_00000136391_RichardSternChandra.week3
 
+//Cleaned Code
+
 fun main() {
     val e = Employee("Budi")
 
