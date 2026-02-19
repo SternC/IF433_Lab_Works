@@ -1,4 +1,4 @@
-package oop_000000136391_RichardSternChandra.week1
+package oop_00000136391_RichardSternChandra.week1
 
 fun main(){
     val gameTitle = "Game 1"

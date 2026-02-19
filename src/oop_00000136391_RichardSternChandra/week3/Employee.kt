@@ -1,0 +1,5 @@
+package oop_00000136391_RichardSternChandra.week3
+
+class Employee(val name: String) {
+    var salary: Int = 0
+}
