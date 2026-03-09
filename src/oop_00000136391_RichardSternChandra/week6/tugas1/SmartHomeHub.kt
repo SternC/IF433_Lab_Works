@@ -15,4 +15,17 @@ class SmartHomeHub {
             }
         }
     }
+
+    fun activateSecurityMode() {
+        for (device in devices) {
+            when(device) {
+                is SmartCCTV -> {
+                    device.startRecord()
+                }
+                is SmartSpeaker -> {
+                    device.playMusic("Sirine Peringatan")
+                }
+            }
+        }
+    }
 }
