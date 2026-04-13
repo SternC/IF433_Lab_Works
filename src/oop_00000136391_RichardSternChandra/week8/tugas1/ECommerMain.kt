@@ -16,4 +16,10 @@ fun main() {
             product -> apiParser.checkout(product)
         } } catch (e: IllegalArgumentException) { println("Data Corrupted: ${e.message}") }
     }
+
+    // OUTPUT
+    // Transaction Success! ID: TRX-E01-SUCCESS
+    //Transaction Success! ID: TRX-C01-SUCCESS
+    //Transaction Success! ID: TRX-E02-SUCCESS
+    //Data Corrupted: API Invalid! Missing ID
 }
