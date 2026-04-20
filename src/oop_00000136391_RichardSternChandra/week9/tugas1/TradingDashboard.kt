@@ -31,14 +31,34 @@ fun main() {
 
     println("=== CRYPTO TRADING DASHBOARD ===")
 
+    println("\nTop Perfomers")
     topPerformersString.forEach {
         println(it)
     }
 
+    println("\nWorst Perfomers")
     worstPerformersString.forEach {
         println(it)
     }
 
+    println("\nUnique Pairs")
     println(uniquePairs)
 
 }
+
+/* === CRYPTO TRADING DASHBOARD ===
+
+
+Top Perfomers
+
+WIN [BTCUSDT - LONG]: +15.5% ROE (Lev: 20x)
+
+Worst Perfomers
+
+LOSS [BTCUSDT - SHORT]: -2.1% ROE (Lev: 15x)
+LOSS [ETHUSDT - LONG]: -1.5% ROE (Lev: 10x)
+
+Unique Pairs
+[BTCUSDT, ETHUSDT]
+
+*/
