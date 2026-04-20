@@ -1,19 +1,13 @@
 package oop_00000136391_RichardSternChandra.week9.tugas1
 
-data class TradeLog(
-    val symbol: String,
-    val status: String,
-    val roe: Double
-)
-
 fun main() {
     val tradeHistory = listOf(
-        TradeLog("BTCUSDT", "OPEN", 5.2),
-        TradeLog("BTCUSDT", "CLOSED", -2.1),
-        TradeLog("ETHUSDT", "OPEN", 3.8),
-        TradeLog("ETHUSDT", "CLOSED", -1.5),
-        TradeLog("BTCUSDT", "CLOSED", 7.0),
-        TradeLog("ETHUSDT", "OPEN", -4.3)
+        TradeLog("BTCUSDT", "LONG", 10, 5.2, "OPEN"),
+        TradeLog("BTCUSDT", "SHORT", 15, -2.1, "CLOSED"),
+        TradeLog("ETHUSDT", "LONG", 5, 3.8, "OPEN"),
+        TradeLog("ETHUSDT", "LONG", 10, -1.5, "CLOSED"),
+        TradeLog("BTCUSDT", "LONG", 20, 15.5, "CLOSED"),
+        TradeLog("ETHUSDT", "SHORT", 25, -4.3, "OPEN")
     )
 
     val closedTrades = tradeHistory.filter { it.status == "CLOSED" }
