@@ -15,4 +15,17 @@ fun main() {
     txRepo.addItem(Transaction("TSC-01", 4.1))
     txRepo.addItem(Transaction("TSC-02", 6.7))
     txRepo.addItem(Transaction("TSC-03", 1.2))
+
+    println("\n=== Transactions ===")
+
+    txRepo.getAll().forEach { tx ->
+        println("Transaction ID - ${tx.id} | Amount: ${tx.amount}")
+    }
+
+    println("\nSearch Result for 'ETH'")
+    val searchCoin = coinRepo.findByName("ETH") { it.name }
+
+    searchCoin.forEach {
+        println(it)
+    }
 }
