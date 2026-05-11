@@ -21,6 +21,7 @@ fun main() {
     catch (e: Exception) { println("Caught General Error: Unknown error!") }
     finally { println("Siklus pengecekan dispenser pagi selesai.") }
 
+    // Sistem Run Catching
     runCatching {dispenseKibble(30, 1000, false)
     }.onSuccess { newStock ->
         currentKibbleStock = newStock
