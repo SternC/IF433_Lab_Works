@@ -20,4 +20,10 @@ fun main() {
     catch (e: FoodEmptyException) { println("Caught Device Error: Device is FoodEmpty! ${e.message}") }
     catch (e: Exception) { println("Caught General Error: Unknown error!") }
     finally { println("Siklus pengecekan dispenser pagi selesai.") }
+
+    runCatching {dispenseKibble(30, 1000, false)
+    }.onSuccess { newStock ->
+        currentKibbleStock = newStock
+        println("Makan sore sukses! Sisa stok kibble: $currentKibbleStock gr")
+    }
 }
