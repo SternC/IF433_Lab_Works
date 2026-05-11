@@ -3,11 +3,7 @@ package oop_00000136391_RichardSternChandra.week12
 fun main() {
     println("=== TEST RUNCATCHING ===")
     val result: Result<Int> = runCatching {
-        "100".toInt()
-    }.onSuccess { v ->
-        println("Berhasil dikonversi: $v")
-    }.onFailure { e ->
-        println("Gagal konversi: ${e.message}")
+        "42X".toInt()
     }
 
     val safeValue = result.getOrElse { -1 }
@@ -15,4 +11,12 @@ fun main() {
 
     val recovered = result.recover { 0 }.getOrNull()
     println("Recovered Value: $recovered")
+
+    runCatching {
+        "100".toInt()
+    }.onSuccess { v ->
+        println("Berhasil dikonversi: $v")
+    }.onFailure { e ->
+        println("Gagal konversi: ${e.message}")
+    }
 }
