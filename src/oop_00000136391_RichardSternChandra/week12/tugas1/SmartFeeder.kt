@@ -8,5 +8,6 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean) : 
     if (requestedGram > availableGram) {
         throw FoodEmptyException(requestedGram, availableGram)
     }
+    // Added return
     return availableGram - requestedGram
 }
