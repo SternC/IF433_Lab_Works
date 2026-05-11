@@ -14,4 +14,9 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean) : 
 
 fun main() {
     var currentKibbleStock = 50
+
+    try { dispenseKibble(80, currentKibbleStock, false) }
+    catch (e: DispenserJamException) { println("Caught Device Error: Device is Jammed! ${e.message}") }
+    catch (e: FoodEmptyException) { println("Caught Device Error: Device is FoodEmpty! ${e.message}") }
+    catch (e: Exception) { println("Caught General Error: Unknown error!") }
 }
