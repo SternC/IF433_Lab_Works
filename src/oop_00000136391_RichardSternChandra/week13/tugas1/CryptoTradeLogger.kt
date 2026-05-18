@@ -59,4 +59,6 @@ fun main() {
 
     File("crypto_trades.csv")
         .appendText("CORRUPT_ID,DOGEUSDT,Hold,XX,YY\n")
+
+    val totalPnL = loadTrades("crypto_trades.csv").sumOf { it.pnl }
 }
