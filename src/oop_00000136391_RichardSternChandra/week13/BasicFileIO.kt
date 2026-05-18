@@ -9,4 +9,10 @@ fun main() {
 
     file.appendText("Line 2: Menambahkan konfigurasi baru.\n")
     println("Teks berhasil di-append.")
+
+    println("=== TEST READ LINES ===")
+    val lines = file.readLines()
+    lines.forEachIndexed { index, line ->
+        println("Isi index $index: $line")
+    }
 }
